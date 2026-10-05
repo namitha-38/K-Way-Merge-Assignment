@@ -1,0 +1,17 @@
+COMPARISON TABLE
+
+Parameter              | Min Heap K-Way | Pairwise Merge
+Number of lists        | 3              | 3
+Total elements         | 12             | 12
+Maximum heap size      | 3              | Not applicable
+Intermediate result    | Not required   | Required
+Time complexity        | O(N log K)     | O(NK) general case
+Space complexity       | O(K)           | O(N)
+Scalability             | Better for many lists | Less suitable for many lists
+Implementation          | More complex   | Simpler
+
+CONCLUSION
+Both methods produce the same sorted output. Pairwise merging is simple for a
+small number of lists. The Min Heap K-way approach is more scalable as the
+number of sorted files increases because its running time is O(N log K) and
+the auxiliary heap uses O(K) space.

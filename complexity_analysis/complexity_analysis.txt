@@ -1,0 +1,21 @@
+COMPLEXITY ANALYSIS
+
+K-WAY MERGE USING MIN HEAP
+Time Complexity: O(N log K)
+Space Complexity: O(K)
+Maximum Heap Size: K = 3
+
+PAIRWISE MERGING
+Time Complexity: O(NK) for sequential pairwise merging in the general case.
+Space Complexity: O(N) for intermediate merged results.
+
+For this input:
+N = 12 total elements
+K = 3 sorted lists
+
+Approximate pairwise comparisons:
+L1 + L2: 7
+Intermediate result + L3: 11
+Total: 18 comparisons (using one comparison per loop iteration).
+
+The exact comparison count can depend on the implementation's comparison-counting convention.
